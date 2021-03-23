@@ -1,0 +1,27 @@
+.table_order {
+	border-color: #fdc300;
+	font-weight: bold;
+	font-size: 0.8rem;
+
+	thead {
+		background-color: #ffd100;
+		font-size: 1.1rem;
+	}
+	tbody {
+		background-color: #fff000;
+	}
+
+	th, td {
+		&:not(:first-child) {
+			text-align: center;
+			width: 16.666666px;
+		}
+		i {
+			font-size: 1.5rem;
+		}
+
+		&:first-child {
+			width: 50%;
+		}
+	}
+}

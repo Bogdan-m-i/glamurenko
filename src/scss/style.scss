@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@400;700&display=swap');
+@import './_var';
+@import './soc';
+@import './navbar';
+@import './table_order';
+
+body {
+    background: url('../img/bg-main.png') top center no-repeat;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    // &:hover {
+    //     text-decoration: underline;
+    // }
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Oranienbaum', serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+.text-gold {
+    color: $gold;
+}
+
+.section-main {
+    height: 70vh;
+    padding-top: 118px;
+}
+
+.sticker-new {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: 'Новинка';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 30px;
+        background-color: red;
+        color: white;
+        font-size: 0.8rem;
+        position: absolute;
+        top: -35px;
+        left: -60px;
+        transform: rotate(-40deg);
+        transform-origin: right bottom;
+        box-shadow: 0 5px 15px -8px black;
+    }
+}
+
+.cost {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__new {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__old {
+        margin-bottom: 0px;
+        font-size: 1.3rem;
+
+        position: relative;
+        padding: 0 10px;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 140%;
+            height: 2px;
+            background-color: red;
+            transform: rotate(-8deg);
+            transform-origin: top right;
+            position: absolute;
+            top: 30%;
+            right: 0;
+            opacity: 0.7;
+        }
+    }
+}
+
+.btn-danger {
+    background-color: red;
+}
+
+.mw-100 {
+    max-width: 100%;
+}
+
+.card {
+    height: 100%;
+
+    .card-footer {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.card-hover {
+    &:hover {
+        border-color: #AAA;
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+        transition: all ease 0.3s;
+    }
+}
+
+.bg-black {
+    background-color: black;
+}

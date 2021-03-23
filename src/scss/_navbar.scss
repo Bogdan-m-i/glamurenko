@@ -1,0 +1,29 @@
+.navbar_gl {
+    text-transform: uppercase;
+    color: white;
+	z-index: 10000;
+
+    .navbar-nav_gl {
+        .nav-link_gl {
+            color: white;
+        }
+    }
+
+    .navbar-social {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-phone {
+        a {
+            color: white;
+            display: block;
+        }
+    }
+
+	a {
+		font-family: 'Oranienbaum', serif;
+
+	}
+}

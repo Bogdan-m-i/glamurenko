@@ -1,0 +1,26 @@
+.soc {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+
+    &.soc_inst {
+        background: url('../img/inst.png') no-repeat;
+    }
+    &.soc_fb {
+        background: url('../img/fb.png') no-repeat;
+    }
+    &.soc_vk {
+        background: url('../img/vk.png') no-repeat;
+    }
+
+    &.soc_inst,
+    &.soc_fb,
+    &.soc_vk {
+        background-size: cover;
+        background-position: center top;
+        &:hover {
+            background-position: center center;
+        }
+    }
+}
